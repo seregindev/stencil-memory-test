@@ -11,6 +11,7 @@ export const config: Config = {
       type: 'dist-custom-elements',
       customElementsExportBehavior: 'auto-define-custom-elements',
       externalRuntime: false,
+      empty: false,
     },
     {
       type: 'docs-readme',
@@ -20,7 +21,7 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
-  minifyJs: false,
+  minifyJs: true,
   testing: {
     browserHeadless: "shell",
   },
